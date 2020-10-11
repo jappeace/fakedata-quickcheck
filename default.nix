@@ -5,7 +5,7 @@ let
   # https://github.com/NixOS/nixpkgs/blob/dbacb52ad8/pkgs/development/haskell-modules/make-package-set.nix#L216
   src = ignore.gitignoreSource ./.;
   cabal2nix =
-    pkgs.haskellPackages.callCabal2nix "template" src {
+    pkgs.haskellPackages.callCabal2nix "fakedata-quickcheck" src {
     };
 in
 # https://github.com/NixOS/nixpkgs/blob/dbacb52ad8/pkgs/development/haskell-modules/generic-builder.nix#L13

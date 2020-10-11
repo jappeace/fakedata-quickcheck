@@ -1,4 +1,4 @@
-name:                template
+name:                fakedata-quickcheck
 version:             1.0.0
 license:             MIT
 author:              "Jappie Klooster"
@@ -46,20 +46,12 @@ default-extensions:
 
 dependencies:
 - base >= 4.7 && < 5
+- QuickCheck
+- fakedata
+- random
 
 library:
   source-dirs: src
-
-executables:
-  exe:
-    main:                exe.hs
-    source-dirs:         app
-    dependencies:
-    - template
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
 
 tests:
   unit:
@@ -69,4 +61,6 @@ tests:
     dependencies:
     - hspec
     - hspec-core
-    - template
+    - fakedata-quickcheck
+    - regex-tdfa
+    - text
