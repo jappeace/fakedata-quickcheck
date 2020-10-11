@@ -20,3 +20,7 @@ spec = do
 ```
 
 See the full code in the tests.
+
+---
+
+Added to a separate project as discussed in [here](https://github.com/psibi/fakedata/pull/27)
