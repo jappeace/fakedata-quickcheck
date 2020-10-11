@@ -15,7 +15,8 @@ isDomain = (=~ "^[A-Za-z_]+\\.[a-z]{1,4}$") . T.unpack
 spec :: Spec
 spec = do
   describe "fakedata quickcheck" $
-    it "forall domain fullfils is a domain name regex" $ Q.property $ Q.forAll (fakeQuickcheck CM.domain) isDomain
+  it "forall domain fullfils is a domain name regex" $
+    Q.property $ Q.forAll (fakeQuickcheck CM.domain) isDomain
 ```
 
 See the full code in the tests.
