@@ -1,3 +1,5 @@
+# MOVED TO https://github.com/fakedata-haskell/fakedata-quickcheck
+
 > If the truth shall kill them, let them die.
 
 This library allows you to make [quickcheck Generators](https://hackage.haskell.org/package/QuickCheck-2.14.1/docs/Test-QuickCheck-Gen.html#t:Gen)
